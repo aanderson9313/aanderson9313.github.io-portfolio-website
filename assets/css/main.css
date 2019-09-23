@@ -88,7 +88,7 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: rgb(0, 0, 0);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -107,12 +107,12 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: rgb(3, 2, 2);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: rgb(0, 0, 0);
 		line-height: 1.5em;
 	}
 
@@ -122,7 +122,7 @@ input, select, textarea {
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
+			color: rgb(0, 0, 0);
 		}
 
 	h2 {
@@ -131,11 +131,11 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+			color: rgb(0, 0, 0);
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: rgb(0, 0, 0);
 			}
 
 	h3 {
@@ -166,7 +166,7 @@ input, select, textarea {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		border-bottom: solid 1px rgba(128, 128, 128, 0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -175,9 +175,10 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: rgb(3, 13, 15);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
+
 
 	sub {
 		position: relative;
@@ -1852,12 +1853,12 @@ input, select, textarea {
 		border: 0;
 		outline: 0;
 		background: #fff;
-		background: rgba(255, 255, 255, 0.75);
+		background: rgba(247, 245, 245, 0.986);
 		width: 100%;
 		border-radius: 0.35em;
 		padding: 0.75em 1em 0.75em 1em;
 		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-		border: solid 1px rgba(0, 0, 0, 0.15);
+		border: dotted 5px rgba(0, 0, 0, 0.15);
 		-moz-transition: all 0.35s ease-in-out;
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
@@ -1869,7 +1870,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
+			box-shadow: 0 0 2px 1px #ffffff;
 			background: #fff;
 		}
 
@@ -1885,19 +1886,19 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: rgb(0, 0, 0) !important;
 	}
 
 	form :-moz-placeholder {
-		color: #555 !important;
+		color: rgb(0, 0, 0) !important;
 	}
 
 	form ::-moz-placeholder {
-		color: #555 !important;
+		color: rgb(0, 0, 0) !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: #555 !important;
+		color: rgb(0, 0, 0) !important;
 	}
 
 	form ::-moz-focus-inner {
@@ -1945,20 +1946,13 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #fff !important;
+		color: rgb(10, 10, 10) !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
-		border: 0;
+		background-color: #54eee9;
+		border: 1 px solid black;
 		cursor: pointer;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
+		
 	}
 
 		input[type="button"]:hover,
@@ -1966,7 +1960,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #586666;
+			color: white !important;
 		}
 
 		input[type="button"]:active,
@@ -2046,7 +2041,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #000000 url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2083,7 +2078,7 @@ input, select, textarea {
 		}
 
 			#header .icons a {
-				color: #41484c;
+				color: #ffffff;
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
@@ -2091,7 +2086,7 @@ input, select, textarea {
 			}
 
 				#header .icons a:hover {
-					color: #fff;
+					color: rgb(3, 248, 236);
 				}
 
 	#logo {
@@ -2113,7 +2108,7 @@ input, select, textarea {
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgb(255, 255, 255);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2122,6 +2117,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
+			transform: rotate(90deg);
 		}
 
 	#nav ul {
@@ -2137,7 +2133,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(255, 255, 255, 0.5);
+				color: rgba(255, 250, 250, 0.911);
 				text-decoration: none;
 				outline: 0;
 				border: 0;
@@ -2172,12 +2168,13 @@ input, select, textarea {
 						color: #e27689;
 					}
 
+
 /* Footer */
 
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #11f3f3;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2247,20 +2244,20 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-color: rgb(0, 0, 0);
+				background-image: url("");
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #cff3f3;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #11f3f3;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #cff3f3;
 			}
 
 /* Wide */
